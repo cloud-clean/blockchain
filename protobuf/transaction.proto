@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package entity;
+
+enum TransactionType {
+    TRANF = 0;
+    ISSUE = 1;
+}
+
+message Transaction {
+    TransactionType type = 1;
+    bytes          Hash = 2;
+    bytes          Sign = 3;
+    bytes          Sender = 4;
+    int64       Timestamp = 5;
+    bytes           Data = 6;
+}
+
+message BlockHeader {
+    int32         Version =1;
+    int32         MagicCode = 2;
+    bytes          Hash = 3;
+    uint32         Height = 4;
+    int64         Timestamp = 5;
+    bytes          PreHash = 6;
+    bytes          Miner = 7;
+    int32         Count = 8;
+}
+
+message Block{
+    BlockHeader     Header = 1;
+    repeated Transaction Trans = 2;
+}

@@ -1,0 +1,15 @@
+package constant
+
+const(
+	BLOCK_CUR_HEIGHT 			= "CUR_HEIGHT"
+	BLOCK_CUR_HASH 				= "CUR_HASH"
+
+
+	PREFIX_BLOCK_HASH 			= "BLOCK_HASH"
+	PREFIX_BLOCK				= "BLOCK"
+
+	PREFIX_TRANSATION			= "TRANSACTION"
+
+	//table
+
+)
